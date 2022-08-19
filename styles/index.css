@@ -1,0 +1,86 @@
+:root {
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Vary-Darkcyan: hsl(162, 36%, 20%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --mont: "Montserrat";
+    --fra: "Fraunces";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--Cream);
+}
+
+section {
+    background-color: var(--White);
+    width: 400px;
+    display: flex;
+    height: 300px;
+    margin: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-text {
+
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.product-text h1 {
+    color: var(--Dark-grayish-blue);
+    font-family: var(--mont);
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.product-title {
+    color: var(--Very-dark-blue);
+    font-family: var(--fra);
+}
+
+.product-description {
+    color: var(--Dark-grayish-blue);
+    font-family: var(--mont);
+    font-size: 14px;
+}
+
+.product-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-price-after-off {
+    color: var(--Darkcyan);
+    font-family: var(--fra);
+    font-size: 20px;
+}
+
+.product-price-before-off {
+    margin-left: 10px;
+    text-decoration-line: line-through;
+    margin-right: 20px;
+}
+
+.product-add-to-cart {
+    background-color: var(--Darkcyan);
+    color: var(--White);
+    text-align: center;
+    border-radius: 5px;
+    height: 40px;
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.product-add-to-cart:hover {
+    background-color: var(--Vary-Darkcyan);
+}
